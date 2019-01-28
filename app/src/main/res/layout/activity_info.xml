@@ -8,4 +8,13 @@
         android:background="@color/colorPrimary"
         tools:context=".InfoActivity">
 
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/start_info_viewpager"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginBottom="8dp" android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

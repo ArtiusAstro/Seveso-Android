@@ -12,7 +12,7 @@ class InfoPagerAdapter(fm: FragmentManager, private val infos: Array<InfoData>) 
     }
 
     override fun getItem(position: Int): Fragment {
-        return InfoCard.newInstance(infos[position])
+        return InfoCard.newInstance(infos[position], position)
     }
 
 }

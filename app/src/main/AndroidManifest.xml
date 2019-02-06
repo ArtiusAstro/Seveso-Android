@@ -3,6 +3,10 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.pandayub.seveso">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -17,7 +21,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-
+        <activity
+                android:name=".LoginActivity"
+                android:label="@string/title_activity_login">
+        </activity>
+        <activity
+                android:name=".SignupNameActivity"
+                android:label="@string/title_activity_signup_name">
+        </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

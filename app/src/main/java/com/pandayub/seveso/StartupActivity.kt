@@ -12,7 +12,8 @@ class StartupActivity : AppCompatActivity() {
         setContentView(R.layout.activity_startup)
 
         Handler().postDelayed({
-            val intent = Intent(this, InfoActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
+            this.applicationContext.startActivity(intent)
         }, 3000)
     }
 }

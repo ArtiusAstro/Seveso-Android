@@ -1,4 +1,4 @@
-package com.pandayub.seveso
+package com.pandayub.seveso.SignUp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

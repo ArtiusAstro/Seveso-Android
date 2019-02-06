@@ -1,6 +1,5 @@
-package com.pandayub.seveso
+package com.pandayub.seveso.Info
 
-import InfoData
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter

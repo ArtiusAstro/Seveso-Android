@@ -1,4 +1,4 @@
-package com.pandayub.seveso
+package com.pandayub.seveso.Info
 
 import android.view.View
 import androidx.viewpager.widget.ViewPager

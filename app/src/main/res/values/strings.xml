@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">SEVESO</string>
-    <string name="startup_txt_info">This is a sample of safety text for this fragment This is a sample of safety text for this fragment This is a sample of safety text for this fragment </string>
-    <string name="startup_subtitle_info">Civil defense strats</string>
-    <string name="startup_info_title">Basic Information</string>
+    <string name="startup_txt_info">This is a sample of safety text for this fragment This is a sample of safety text
+        for this fragment This is a sample of safety text for this fragment This is a sample of safety text for this
+        fragment This is a sample of safeple of safety text for this fragment This is a sample of safeple of safety text
+        for this fragment This is a sample of safety text for this fragmment This is a sample of f safety text for
+    </string>
+    <string name="startup_subtitle_info">Civil Defense stuff</string>
 </resources>

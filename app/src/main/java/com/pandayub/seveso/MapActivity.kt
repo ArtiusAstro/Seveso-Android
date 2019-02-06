@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 
-class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, {
+class MapActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +18,9 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         when (item.itemId) {
             R.id.sidebarHome -> {
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, MapActivity::class.java)
                 this.applicationContext.startActivity(intent)
             }
             R.id.sidebarActions -> {

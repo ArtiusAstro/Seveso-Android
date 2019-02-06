@@ -2,33 +2,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
-    <group android:id="@+id/sidebarMenuTop">
-        <item
-                android:id="@+id/sidebarNotifications"
-                android:title="Notifications" />
-        <item
-                android:id="@+id/sidebarShoppingList"
-                android:title="Shopping List" />
-    </group>
     <group
-            android:id="@+id/sidebarMenuBottom"
+            android:id="@+id/sidebarMenuActivities"
             android:checkableBehavior="single">
         <item
                 android:id="@+id/sidebarHome"
                 android:icon="@drawable/ic_home_black_24dp"
                 android:title="Home"/>
         <item
-                android:id="@+id/sidebarMessages"
-                android:icon="@drawable/ic_chat_bubble_black_24dp"
-                android:title="Messages"/>
+                android:id="@+id/sidebarActions"
+                android:icon="@drawable/ic_warning_black_24dp"
+                android:title="Emergency Actions"/>
         <item
-                android:id="@+id/sidebarFriendsList"
-                android:icon="@drawable/ic_people_black_24dp"
-                android:title="Friends"/>
+                android:id="@+id/sidebarInfo"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Information"/>
         <item
-                android:id="@+id/sidebarLogout"
-                android:icon="@drawable/ic_power_settings_new_black_24dp"
-                android:title="Logout" />
+                android:id="@+id/sidebarMap"
+                android:icon="@drawable/ic_map_black_24dp"
+                android:title="Map" />
+        <item
+                android:id="@+id/sidebarPhone"
+                android:icon="@drawable/ic_local_phone_black_24dp"
+                android:title="Contact" />
+        <item
+                android:id="@+id/sidebarSettings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
 
     </group>
 </menu>

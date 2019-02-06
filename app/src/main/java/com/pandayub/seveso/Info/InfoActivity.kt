@@ -1,10 +1,9 @@
-package com.pandayub.seveso
+package com.pandayub.seveso.Info
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
-import InfoData
 
 class InfoActivity : AppCompatActivity() {
 
@@ -20,10 +19,26 @@ class InfoActivity : AppCompatActivity() {
      */
     private fun setupViewPager() {
         val infos: Array<InfoData> = arrayOf(
-            InfoData("png","Civil Defence: An Overview", "THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one "),
-            InfoData("png","Oil Reservoir Dangers: An Overview", "THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one "),
-            InfoData("png","This Application: Description And Goals", "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "),
-            InfoData("png","This Application: Description And Goals", "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one ")
+            InfoData(
+                "png",
+                "Civil Defence: An Overview",
+                "THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one "
+            ),
+            InfoData(
+                "png",
+                "Oil Reservoir Dangers: An Overview",
+                "THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one "
+            ),
+            InfoData(
+                "png",
+                "This Application: Description And Goals",
+                "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "
+            ),
+            InfoData(
+                "png",
+                "This Application: Description And Goals",
+                "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "
+            )
             )
 
         Log.e("SetupViewPager", "loaded")

@@ -1,4 +1,4 @@
-
+package com.pandayub.seveso.Info
 class InfoData(val imgData: String, val subtitleData: String, val txtData: String) {
     public fun getImageData(): String{
         return imgData;

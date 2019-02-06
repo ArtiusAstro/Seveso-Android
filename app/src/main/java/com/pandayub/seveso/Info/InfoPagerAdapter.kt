@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 class InfoPagerAdapter(fm: FragmentManager, private val infos: Array<InfoData>) : FragmentPagerAdapter(fm) {
 
     override fun getCount(): Int {
-        return 3
+        return infos.size
     }
 
     override fun getItem(position: Int): Fragment {

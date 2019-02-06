@@ -2,12 +2,15 @@ package com.pandayub.seveso
 
 import InfoData
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.button.MaterialButton
 import kotlinx.android.synthetic.main.fragment_info_card.*
 
 private var ARG_PARAM1: String = ""
@@ -16,7 +19,6 @@ private var ARG_PARAM3: String = ""
 private var ARG_PARAM4: Int = 1
 
 class InfoCard: Fragment(){
-    private var listener: OnFragmentInteractionListener? = null
     private var param1: Int = 0
     private var param2: String = ""
     private var param3: String = ""
@@ -30,8 +32,15 @@ class InfoCard: Fragment(){
             param1 = context!!.resources.getIdentifier(ARG_PARAM1, "drawable", context!!.packageName);
             param2 = ARG_PARAM2
             param3 = ARG_PARAM3
-            param4 = ARG_PARAM4
+            param4 = context!!.resources.getIdentifier("startup_info_pg$ARG_PARAM4", "drawable", context!!.packageName);
         }
+    }
+
+    private fun goBlack(startup_info_pg: MaterialButton){
+        startup_info_pg.background = ContextCompat.getDrawable(this.context!!,R.colors.black)
+    }
+    private fun goGrey(startup_info_pg: MaterialButton){
+        startup_info_pg.background = ContextCompat.getDrawable(this.context!!,R.colors.grey)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -39,6 +48,38 @@ class InfoCard: Fragment(){
         startup_info_img.setImageResource(param1)
         startup_info_subtitle.text = param2
         startup_info_txt.text = param3
+        when (param4) {
+            1 -> {
+                goGrey(startup_info_pg1)
+                goBlack(startup_info_pg2)
+                goBlack(startup_info_pg3)
+                startup_info_done.visibility = View.GONE
+            }
+            2 -> {
+                goBlack(startup_info_pg1)
+                goGrey(startup_info_pg2)
+                goBlack(startup_info_pg3)
+                startup_info_done.visibility = View.GONE
+            }
+            3 -> {
+                goBlack(startup_info_pg1)
+                goBlack(startup_info_pg2)
+                goGrey(startup_info_pg3)
+                startup_info_done.visibility = View.VISIBLE
+                startup_info_done.setOnClickListener {
+                    fun onClick(v: View?) {
+                        val intent = Intent(activity, SignUpActivity::class.java)
+                        startActivity(intent)
+                    }
+                }
+            }
+            else -> {
+                goBlack(startup_info_pg1)
+                goBlack(startup_info_pg2)
+                goBlack(startup_info_pg3)
+                startup_info_done.visibility = View.GONE
+            }
+        }
 
         return view
     }
@@ -46,33 +87,6 @@ class InfoCard: Fragment(){
     override fun onAttach(context: Context) {
         super.onAttach(context)
         horizontalLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        if (context is OnFragmentInteractionListener) {
-            listener = context
-        } else {
-            throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
-        }
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        listener = null
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     *
-     *
-     * See the Android Training lesson [Communicating with Other Fragments]
-     * (http://developer.android.com/training/basics/fragments/communicating.html)
-     * for more information.
-     */
-    interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        fun changeToProfile(profile: MutableMap<String, Any>?, authorID: String)
-
     }
 
     companion object {

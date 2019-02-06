@@ -22,8 +22,9 @@ class InfoActivity : AppCompatActivity() {
         val infos: Array<InfoData> = arrayOf(
             InfoData("png","Civil Defence: An Overview", "THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one "),
             InfoData("png","Oil Reservoir Dangers: An Overview", "THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one "),
+            InfoData("png","This Application: Description And Goals", "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "),
             InfoData("png","This Application: Description And Goals", "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one ")
-        )
+            )
 
         Log.e("SetupViewPager", "loaded")
         val viewPager = findViewById<ViewPager>(R.id.start_info_viewpager)

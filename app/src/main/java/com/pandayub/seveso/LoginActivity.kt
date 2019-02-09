@@ -23,6 +23,7 @@ import android.widget.TextView
 
 import java.util.ArrayList
 import android.Manifest.permission.READ_CONTACTS
+import android.content.Intent
 
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -34,6 +35,10 @@ class LoginActivity : Activity(), LoaderCallbacks<Cursor> {
      * Keep track of the login task to ensure we can cancel it if requested.
      */
     private var mAuthTask: UserLoginTask? = null
+
+    override fun onBackPressed() {
+        //do nothing
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +53,17 @@ class LoginActivity : Activity(), LoaderCallbacks<Cursor> {
             false
         })
 
-        email_sign_in_button.setOnClickListener { attemptLogin() }
+        email_sign_in_button.setOnClickListener {
+            attemptLogin()
+            val intent = Intent(applicationContext, HomeActivity::class.java)
+            startActivity(intent)
+        }
+        email_sign_up_button.setOnClickListener {
+            fun onClick(v: View?) {
+                val intent = Intent(applicationContext, SignupNameActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 
     private fun populateAutoComplete() {

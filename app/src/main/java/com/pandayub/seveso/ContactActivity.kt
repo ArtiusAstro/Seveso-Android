@@ -12,7 +12,7 @@ class ContactActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_startup)
+        setContentView(R.layout.activity_home)
 
 
     }

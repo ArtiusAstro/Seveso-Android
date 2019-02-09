@@ -12,7 +12,7 @@ class ScrollInfoActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_startup)
+        setContentView(R.layout.activity_home)
 
 
     }

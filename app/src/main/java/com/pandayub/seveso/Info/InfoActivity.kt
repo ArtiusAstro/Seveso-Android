@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
+import com.pandayub.seveso.R
 
 class InfoActivity : AppCompatActivity() {
 
@@ -20,22 +21,17 @@ class InfoActivity : AppCompatActivity() {
     private fun setupViewPager() {
         val infos: Array<InfoData> = arrayOf(
             InfoData(
-                "png",
+                "ic_fingerprint_black_24dp.xml",
                 "Civil Defence: An Overview",
                 "THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one THis is a sample text for the FIRST one "
             ),
             InfoData(
-                "png",
+                "ic_home_black_24dp.xml",
                 "Oil Reservoir Dangers: An Overview",
                 "THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one THis is a sample text for the SECOND one "
             ),
             InfoData(
-                "png",
-                "This Application: Description And Goals",
-                "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "
-            ),
-            InfoData(
-                "png",
+                "ic_settings_black_24dp.xml",
                 "This Application: Description And Goals",
                 "THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one THis is a sample text for the THIRD one "
             )

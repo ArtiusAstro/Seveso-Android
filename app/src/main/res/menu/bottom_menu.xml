@@ -3,19 +3,10 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="@string/create_recipe"
-          android:id="@+id/bottom_bar_add" app:showAsAction="ifRoom"
-          android:icon="@drawable/ic_baseline_add_box_24px"/>
-    <item
-            android:id="@+id/bottom_bar_favorite"
-            android:title="@string/favorites"
-            app:showAsAction="ifRoom"
-            android:icon="@drawable/ic_baseline_favorite_24px"/>
-
     <item
             android:id="@+id/bottom_bar_search"
-            android:title="@string/search"
-            app:showAsAction="ifRoom"
-            android:icon="@drawable/ic_baseline_search_24px"/>
+            android:title="@string/fingerprint"
+        android:icon="@drawable/ic_fingerprint_black_24dp"
+        android:showAsAction="ifRoom" />
 
 </menu>

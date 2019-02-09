@@ -2,13 +2,11 @@ package com.pandayub.seveso
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 
-class ActionsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, {
+class ActionsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +33,7 @@ class ActionsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 val intent = Intent(this, MapActivity::class.java)
                 this.applicationContext.startActivity(intent)
             }
-            R.id.sidebarContact -> {
+            R.id.sidebarPhone -> {
                 val intent = Intent(this, ContactActivity::class.java)
                 this.applicationContext.startActivity(intent)
             }

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 
-class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +35,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent = Intent(this, MapActivity::class.java)
                 this.applicationContext.startActivity(intent)
             }
-            R.id.sidebarContact -> {
+            R.id.sidebarPhone -> {
                 val intent = Intent(this, ContactActivity::class.java)
                 this.applicationContext.startActivity(intent)
             }

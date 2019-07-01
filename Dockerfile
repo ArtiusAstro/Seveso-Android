@@ -1,4 +1,4 @@
-FROM quay.io/bitriseio/bitrise-base:alpha
+FROM root
 
 ENV ANDROID_HOME /opt/android-sdk-linux
 
